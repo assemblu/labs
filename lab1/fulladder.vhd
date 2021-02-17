@@ -4,10 +4,11 @@ use ieee.numeric_std.all;
  
 entity fulladder is
 	port(
-		i_bit1 : in std_logic;
-		i_bit2 : in std_logic;
-		i_bit3 : in std_logic;
-		i_bit4 : in std_logic;
+		a1 : in std_logic;
+		a2 : in std_logic;
+		b1 : in std_logic;
+		b2 : in std_logic;
+		c1 : in std_logic;
 		
 		o_sum1 : out std_logic;
 		o_sum2 : out std_logic;
@@ -25,22 +26,28 @@ architecture rtl of fulladder is
   signal WIRE_5 : std_logic;
   signal WIRE_6 : std_logic;
   signal WIRE_7 : std_logic;
+  signal WIRE_8 : std_logic;
+  signal WIRE_9 : std_logic;
+  signal WIRE_10 : std_logic;
   
 begin
 	-- First wire section
-	WIRE_1 <= i_bit1 xor i_bit2;
-	WIRE_2 <= i_bit1 and i_bit2;
-	WIRE_3 <= i_bit3 xor i_bit4;
-	WIRE_4 <= i_bit3 and i_bit4;
+	WIRE_1 <= a1 xor b1;
+	WIRE_2 <= a1 and b1;
+	WIRE_3 <= WIRE_1 AND c1;
+	WIRE_4 <= c1 xor WIRE_1;
+	WIRE_5 <= WIRE_3 or WIRE_2;
 	
 	-- Second wire section
-	WIRE_5 <= WIRE_3 xor WIRE_2;
-	WIRE_6 <= WIRE_3 and WIRE_2;
-	WIRE_7 <= WIRE_6 or WIRE_4;
+	WIRE_6 <= a2 xor b2;
+	WIRE_7 <= a2 and b2;
+	WIRE_8 <= WIRE_6 and WIRE_5;
+	WIRE_9 <= WIRE_5 xor WIRE_6;
+	WIRE_10 <= WIRE_8 or WIRE_7;
 	
 	-- Outputs
-	o_sum1 <= WIRE_1;
-	o_sum2 <= WIRE_5;
-	o_carr <= WIRE_7;
+	o_sum1 <= WIRE_4;
+	o_sum2 <= WIRE_9;
+	o_carr <= WIRE_10;
  
 end rtl;

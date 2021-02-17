@@ -1,14 +1,16 @@
 |fulladder
-i_bit1 => WIRE_1.IN0
-i_bit1 => WIRE_2.IN0
-i_bit2 => WIRE_1.IN1
-i_bit2 => WIRE_2.IN1
-i_bit3 => WIRE_3.IN0
-i_bit3 => WIRE_4.IN0
-i_bit4 => WIRE_3.IN1
-i_bit4 => WIRE_4.IN1
-o_sum1 <= WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
-o_sum2 <= WIRE_5.DB_MAX_OUTPUT_PORT_TYPE
-o_carr <= WIRE_7.DB_MAX_OUTPUT_PORT_TYPE
+a1 => WIRE_1.IN0
+a1 => WIRE_2.IN0
+a2 => WIRE_6.IN0
+a2 => WIRE_7.IN0
+b1 => WIRE_1.IN1
+b1 => WIRE_2.IN1
+b2 => WIRE_6.IN1
+b2 => WIRE_7.IN1
+c1 => WIRE_3.IN1
+c1 => WIRE_4.IN1
+o_sum1 << WIRE_4.DB_MAX_OUTPUT_PORT_TYPE
+o_sum2 << WIRE_9.DB_MAX_OUTPUT_PORT_TYPE
+o_carr << WIRE_10.DB_MAX_OUTPUT_PORT_TYPE
 
 
