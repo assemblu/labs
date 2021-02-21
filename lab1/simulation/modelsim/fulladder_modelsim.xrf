@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/labs/lab1/fulladder.vhd
+source_file = 1, C:/dev/labs/lab1/fulladder.vhd
+source_file = 1, C:/dev/labs/lab1/simulation/modelsim/fulladder.vht
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/labs/lab1/db/fulladder.cbx.xml
+source_file = 1, C:/dev/labs/lab1/db/fulladder.cbx.xml
 design_name = fulladder
 instance = comp, \o_sum1~output\, o_sum1~output, fulladder, 1
 instance = comp, \o_sum2~output\, o_sum2~output, fulladder, 1

@@ -18,7 +18,7 @@
 -- suit user's needs .Comments are provided in each section to help the user  
 -- fill out necessary details.                                                
 -- ***************************************************************************
--- Generated on "02/17/2021 21:43:43"
+-- Generated on "02/19/2021 06:52:51"
                                                             
 -- Vhdl Test Bench template for design  :  fulladder
 -- 
@@ -80,21 +80,67 @@ BEGIN
         -- code executes for every event on sensitivity list  
 		  a2 <= '0'; a1 <= '0'; b2 <= '0'; b1 <= '0'; c1 <= '0';
 		  wait for 100 ns;
-		  
 		  a2 <= '0'; a1 <= '0'; b2 <= '0'; b1 <= '0'; c1 <= '1';
 		  wait for 100 ns;
-		  
 		  a2 <= '0'; a1 <= '0'; b2 <= '0'; b1 <= '1'; c1 <= '0';
 		  wait for 100 ns;
-		  
 		  a2 <= '0'; a1 <= '1'; b2 <= '0'; b1 <= '0'; c1 <= '0';
 		  wait for 100 ns;
-		  
 		  a2 <= '0'; a1 <= '0'; b2 <= '0'; b1 <= '1'; c1 <= '1';
 		  wait for 100 ns;
-		  
-		  a2 <= '0'; a1 <= '0'; b2 <= '0'; b1 <= '0'; c1 <= '0';
+		  a2 <= '0'; a1 <= '1'; b2 <= '0'; b1 <= '0'; c1 <= '1';
 		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '0'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '0'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '0'; b2 <= '1'; b1 <= '0'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '0'; b2 <= '1'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '0'; b2 <= '1'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '1'; b1 <= '0'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '0'; b2 <= '1'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '1'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '1'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '0'; a1 <= '1'; b2 <= '1'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '0'; b1 <= '0'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '0'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '0'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '0'; b1 <= '0'; c1 <= '0';
+			wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '0'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '0'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '0'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '0'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '1'; b1 <= '0'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '1'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '1'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '1'; b1 <= '0'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '0'; b2 <= '1'; b1 <= '1'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '1'; b1 <= '0'; c1 <= '1';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '1'; b1 <= '1'; c1 <= '0';
+		  wait for 100 ns;
+		  a2 <= '1'; a1 <= '1'; b2 <= '1'; b1 <= '1'; c1 <= '1';
 		  
 WAIT;                                                        
 END PROCESS always;                                          
