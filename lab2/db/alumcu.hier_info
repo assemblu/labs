@@ -1,0 +1,31 @@
+|alumcu
+opCode[7] => ~NO_FANOUT~
+opCode[8] => ~NO_FANOUT~
+opCode[9] => ~NO_FANOUT~
+opCode[10] => ~NO_FANOUT~
+opCode[11] => ~NO_FANOUT~
+opCode[12] => ~NO_FANOUT~
+opCode[13] => ~NO_FANOUT~
+fileCode[0] => ~NO_FANOUT~
+fileCode[1] => ~NO_FANOUT~
+fileCode[2] => ~NO_FANOUT~
+fileCode[3] => ~NO_FANOUT~
+fileCode[4] => ~NO_FANOUT~
+fileCode[5] => ~NO_FANOUT~
+fileCode[6] => ~NO_FANOUT~
+accumulator[0] => ~NO_FANOUT~
+accumulator[1] => ~NO_FANOUT~
+accumulator[2] => ~NO_FANOUT~
+accumulator[3] => ~NO_FANOUT~
+accumulator[4] => ~NO_FANOUT~
+accumulator[5] => ~NO_FANOUT~
+accumulator[6] => ~NO_FANOUT~
+accumulator[7] => ~NO_FANOUT~
+accumulator[8] => ~NO_FANOUT~
+accumulator[9] => ~NO_FANOUT~
+accumulator[10] => ~NO_FANOUT~
+accumulator[11] => ~NO_FANOUT~
+accumulator[12] => ~NO_FANOUT~
+accumulator[13] => ~NO_FANOUT~
+
+
