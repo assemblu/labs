@@ -12,22 +12,20 @@
 # 
 # vcom -93 -work work {C:/dev/labs/lab2/alumcu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:35:35 on Mar 09,2021
+# Start time: 22:00:13 on Mar 14,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/alumcu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
 # -- Compiling entity alumcu
 # -- Compiling architecture behavior of alumcu
-# ** Warning: C:/dev/labs/lab2/alumcu.vhd(35): (vcom-1275) Arguments of overloaded "and" operator are not the same length (14 vs. 7).
-# End time: 20:35:35 on Mar 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 22:00:13 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/dev/labs/lab2/simulation/modelsim/alumcu.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:35:35 on Mar 09,2021
+# Start time: 22:00:13 on Mar 14,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/simulation/modelsim/alumcu.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -38,64 +36,32 @@
 # ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 1.
 # ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 6.
 # ** Note: C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(70): VHDL Compiler exiting
-# End time: 20:35:35 on Mar 09,2021, Elapsed time: 0:00:00
+# End time: 22:00:13 on Mar 14,2021, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 # Error in macro ./alumcu_run_msim_rtl_vhdl.do line 10
 # C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
 # "vcom -93 -work work {C:/dev/labs/lab2/simulation/modelsim/alumcu.vht}"
-vsim work.alumcu work.alumcu_vhd_tst
-# vsim work.alumcu work.alumcu_vhd_tst 
-# Start time: 20:35:40 on Mar 09,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.alumcu(behavior)
-# ** Error: (vsim-3173) Entity 'C:/dev/labs/lab2/simulation/modelsim/rtl_work.alumcu_vhd_tst' has no architecture.
-# Error loading design
-# End time: 20:35:41 on Mar 09,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
 vcom -93 -work work C:/dev/labs/lab2/alumcu.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:35:44 on Mar 09,2021
+# Start time: 22:00:17 on Mar 14,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/alumcu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
 # -- Compiling entity alumcu
 # -- Compiling architecture behavior of alumcu
-# ** Warning: C:/dev/labs/lab2/alumcu.vhd(35): (vcom-1275) Arguments of overloaded "and" operator are not the same length (14 vs. 7).
-# End time: 20:35:44 on Mar 09,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vcom -93 -work work C:/dev/labs/lab2/simulation/modelsim/alumcu.vht
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:35:44 on Mar 09,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/simulation/modelsim/alumcu.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity alumcu_vhd_tst
-# -- Compiling architecture alumcu_arch of alumcu_vhd_tst
-# ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 14; length of actual is 1.
-# ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 1.
-# ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 6.
-# ** Note: C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(70): VHDL Compiler exiting
-# End time: 20:35:44 on Mar 09,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# End time: 22:00:17 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vsim work.alumcu
 # vsim work.alumcu 
-# Start time: 20:35:47 on Mar 09,2021
+# Start time: 22:00:21 on Mar 14,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
 # Loading work.alumcu(behavior)
 add wave -position insertpoint  \
 sim:/alumcu/opCode \
@@ -103,26 +69,39 @@ sim:/alumcu/fileCode \
 sim:/alumcu/accumulator \
 sim:/alumcu/tempOut \
 sim:/alumcu/fileRegister
-force -freeze sim:/alumcu/opCode 0010101 0
-force -freeze sim:/alumcu/fileRegister 0000001 0
-run
-run
-noforce sim:/alumcu/accumulator
-force -freeze sim:/alumcu/accumulator 0 0
-# Value length (1) does not equal array index length (14).
-# ** UI-Msg: (vsim-4011) Invalid force value: 0 0.
-# 
-force -freeze sim:/alumcu/tempOut 0 0
-# Value length (1) does not equal array index length (14).
-# ** UI-Msg: (vsim-4011) Invalid force value: 0 0.
-# 
+force -freeze sim:/alumcu/opCode 0001111 0
+force -freeze sim:/alumcu/accumulator 00000000000010 0
 force -freeze sim:/alumcu/fileCode 0000001 0
 run
-# Break key hit
-run -continue
+run
+run
+force -freeze sim:/alumcu/opCode 0010101 0
+force -freeze sim:/alumcu/fileRegister 0010101 0
+run
+run
+noforce sim:/alumcu/fileRegister
 run
 run
 run
-# Break key hit
-# End time: 20:39:45 on Mar 09,2021, Elapsed time: 0:03:58
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/alumcu/fileCode
+noforce sim:/alumcu/fileRegister
+run
+noforce sim:/alumcu/accumulator
+noforce sim:/alumcu/tempOut
+noforce sim:/alumcu/fileRegister
+run
+# End time: 22:54:31 on Mar 14,2021, Elapsed time: 0:54:10
 # Errors: 0, Warnings: 0

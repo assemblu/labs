@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "03/09/2021 20:17:56"
+-- DATE "03/14/2021 21:59:32"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -36,9 +36,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	alumcu IS
     PORT (
-	opCode : IN std_logic_vector(13 DOWNTO 7);
-	fileCode : IN std_logic_vector(6 DOWNTO 0);
-	accumulator : IN std_logic_vector(13 DOWNTO 0)
+	opCode : IN IEEE.NUMERIC_STD.unsigned(13 DOWNTO 7);
+	fileCode : IN IEEE.NUMERIC_STD.unsigned(6 DOWNTO 0);
+	accumulator : IN IEEE.NUMERIC_STD.unsigned(13 DOWNTO 0)
 	);
 END alumcu;
 
@@ -118,9 +118,9 @@ SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 
 BEGIN
 
-ww_opCode <= opCode;
-ww_fileCode <= fileCode;
-ww_accumulator <= accumulator;
+ww_opCode <= IEEE.STD_LOGIC_1164.STD_LOGIC_VECTOR(opCode);
+ww_fileCode <= IEEE.STD_LOGIC_1164.STD_LOGIC_VECTOR(fileCode);
+ww_accumulator <= IEEE.STD_LOGIC_1164.STD_LOGIC_VECTOR(accumulator);
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for alumcu
-Tue Mar 09 20:16:45 2021
+Sun Mar 14 21:58:26 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 09 20:16:45 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 14 21:58:26 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; alumcu                                      ;
 ; Top-level Entity Name           ; alumcu                                      ;
@@ -254,56 +254,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 09 20:16:30 2021
+    Info: Processing started: Sun Mar 14 21:58:12 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alumcu -c alumcu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file alumcu.vhd
-    Info (12022): Found design unit 1: alumcu-behavior File: C:/dev/labs/lab2/alumcu.vhd Line: 22
-    Info (12023): Found entity 1: alumcu File: C:/dev/labs/lab2/alumcu.vhd Line: 6
+    Info (12022): Found design unit 1: alumcu-behavior File: C:/dev/labs/lab2/alumcu.vhd Line: 21
+    Info (12023): Found entity 1: alumcu File: C:/dev/labs/lab2/alumcu.vhd Line: 5
 Info (12127): Elaborating entity "alumcu" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at alumcu.vhd(23): object "tempOut" assigned a value but never read File: C:/dev/labs/lab2/alumcu.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at alumcu.vhd(39): signal "fileRegister" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/dev/labs/lab2/alumcu.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at alumcu.vhd(26): inferring latch(es) for signal or variable "fileRegister", which holds its previous value in one or more paths through the process File: C:/dev/labs/lab2/alumcu.vhd Line: 26
+Warning (10036): Verilog HDL or VHDL warning at alumcu.vhd(22): object "tempOut" assigned a value but never read File: C:/dev/labs/lab2/alumcu.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at alumcu.vhd(38): signal "fileRegister" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/dev/labs/lab2/alumcu.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at alumcu.vhd(25): inferring latch(es) for signal or variable "fileRegister", which holds its previous value in one or more paths through the process File: C:/dev/labs/lab2/alumcu.vhd Line: 25
 Warning (12158): Entity "alumcu" contains only dangling pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 28 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "opCode[7]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[8]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[9]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[10]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[11]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[12]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "opCode[13]" File: C:/dev/labs/lab2/alumcu.vhd Line: 11
-    Warning (15610): No output dependent on input pin "fileCode[0]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[1]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[2]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[3]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[4]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[5]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "fileCode[6]" File: C:/dev/labs/lab2/alumcu.vhd Line: 14
-    Warning (15610): No output dependent on input pin "accumulator[0]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[1]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[2]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[3]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[4]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[5]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[6]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[7]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[8]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[9]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[10]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[11]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[12]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
-    Warning (15610): No output dependent on input pin "accumulator[13]" File: C:/dev/labs/lab2/alumcu.vhd Line: 17
+    Warning (15610): No output dependent on input pin "opCode[7]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[8]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[9]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[10]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[11]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[12]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "opCode[13]" File: C:/dev/labs/lab2/alumcu.vhd Line: 10
+    Warning (15610): No output dependent on input pin "fileCode[0]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[1]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[2]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[3]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[4]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[5]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "fileCode[6]" File: C:/dev/labs/lab2/alumcu.vhd Line: 13
+    Warning (15610): No output dependent on input pin "accumulator[0]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[1]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[2]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[3]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[4]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[5]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[6]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[7]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[8]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[9]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[10]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[11]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[12]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
+    Warning (15610): No output dependent on input pin "accumulator[13]" File: C:/dev/labs/lab2/alumcu.vhd Line: 16
 Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 28 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Tue Mar 09 20:16:45 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Sun Mar 14 21:58:26 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
