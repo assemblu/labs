@@ -4,48 +4,79 @@ use ieee.numeric_std.all;
 
 entity alumcu is
 	port(
-		-- opcode also includes direction
-		-- direction bit is the 1st LSB
-		-- the rest MSB are opcodes
-		opCode : in unsigned(13 downto 7);
-		-- file code is the LSB 14bit of the 
-		-- 14bit opcode according to PIC16 design
-		fileCode : in unsigned(6 downto 0);
-		
-		-- accumulator that is 14-bits
-		accumulator : in unsigned(13 downto 0)
+		-- opcode msb 6bits represent opcode
+		-- lsb 7bits represent fileRegister input
+		-- middle bit represent direction
+		opcode : in unsigned(13 downto 0);
+
+		-- output of the alu
+		-- not really used for now
+		aluOut : buffer unsigned(7 downto 0)
 		
 	);
 end alumcu;
 
 architecture behavior of alumcu is
-	signal tempOut : unsigned(13 downto 0);
 	signal fileRegister : unsigned(6 downto 0);
+	-- Akku
+	signal Wreg : unsigned(6 downto 0);
 	
-	begin process(opCode, accumulator, fileCode)
+
+	begin process(opCode)
 	-- process
 		begin
 		
 		-- opcode processing without directions
 		case opcode (13 downto 8) is
 			-- ADDWF
-			when "000111" => tempOut <= accumulator + fileCode;
+			when "000111" => 
+				-- If direction is 0 store in W
+				if opcode (7) = '0' then
+					Wreg <= Wreg + fileRegister;
+				-- If direction is 1 store in f register
+				elsif opcode (7) = '1' then
+					fileRegister <= Wreg + fileRegister;
+				end if;
 			-- ANDWF
-			when "000101" => tempOut <= accumulator and fileCode;
+			when "000101" => 
+				-- If direciton is 0 store in W
+				if opcode (7) = '0' then
+					Wreg <= Wreg and fileRegister;
+				-- If direction is 1 store in f register
+				elsif opcode (7) = '1' then
+					fileRegister <= Wreg and fileRegister;
+				end if;
 			-- CLRF
-			when "000001" => fileRegister <= "0000000";
+			when "000001" => 
+				-- Clear register F
+				fileRegister <= "0000000";
 			-- INCF
-			when "001010" => fileRegister <= fileRegister + 1;
+			when "001010" => 
+			-- increment contents of f
+				-- if direction is 0 store in W
+				if opcode (7) = '0' then
+					Wreg <= fileRegister + 1;
+				-- if direction is 1 store in f
+				elsif opcode (7) = '1' then
+					fileRegister <= fileRegister + 1;
+				end if;
 			-- MOVF
-			when ""
-				-- if direction is 0
+			when "001000" =>
+				-- direction 0
+				if opcode (7) = '0' then
 					-- move fCode to W
-				-- else if direction is 1
+					Wreg <= opcode(6 downto 0);
+				-- direction 1
+				elsif opcode (7) = '1' then
 					-- move fCode to fRegister
+					fileRegister <= opcode(6 downto 0);
+				end if;
 			-- BSF
-			when "010101" => fileRegister <= fileCode;
+			when "010100" => 
+				fileRegister <= opcode(6 downto 0);
 			-- others
-			when others => tempOut <= "00000000000000";
+			when others =>
+				aluOut <= "00000000";
 		end case;
 		
 	end process;

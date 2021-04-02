@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/dev/labs/lab2/simulation/modelsim
 Ealumcu
-Z1 w1615755491
+Z1 w1616799354
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -20,13 +20,13 @@ Z5 8C:/dev/labs/lab2/alumcu.vhd
 Z6 FC:/dev/labs/lab2/alumcu.vhd
 l0
 L5 1
-V5^GW^>bXnoT^obJ>J?UQI1
-!s100 Mh;O_[F3cnc:HYHWm@7je3
+VROSJKafe7mBIo]<>G:efU0
+!s100 K_?Rl3GD`FZ<nTn7D?mfk3
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1615755617
+Z8 !s110 1616834912
 !i10b 1
-Z9 !s108 1615755617.000000
+Z9 !s108 1616834912.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/dev/labs/lab2/alumcu.vhd|
 Z11 !s107 C:/dev/labs/lab2/alumcu.vhd|
 !i113 1
@@ -36,12 +36,12 @@ Abehavior
 R2
 R3
 R4
-Z14 DEx4 work 6 alumcu 0 22 5^GW^>bXnoT^obJ>J?UQI1
+Z14 DEx4 work 6 alumcu 0 22 ROSJKafe7mBIo]<>G:efU0
 !i122 2
 l25
-Z15 L21 27
-Z16 VTn0NUPzWBLm3loIYWo1e52
-Z17 !s100 _>Vd11VK:?6STa2iZNz@J2
+Z15 L19 66
+Z16 VGP[V62;9>GSaNEHGj5gAL0
+Z17 !s100 9_P_LGkOfl[<di=I9kaAU2
 R7
 31
 R8
@@ -66,9 +66,9 @@ Vl^OU0Sj2ge::TaTc<DGXP0
 !s100 N^72jOZAbD<z>mC<jVOJY1
 R7
 31
-Z18 !s110 1615755613
+Z18 !s110 1616834878
 !i10b 1
-Z19 !s108 1615755613.000000
+!s108 1616834878.000000
 !s90 -reportprogress|300|-93|-work|work|C:/dev/labs/lab2/simulation/modelsim/alumcu.vht|
 !s107 C:/dev/labs/lab2/simulation/modelsim/alumcu.vht|
 !i113 1
