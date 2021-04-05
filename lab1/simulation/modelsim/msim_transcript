@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/dev/labs/lab1/fulladder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:59:52 on Feb 20,2021
+# Start time: 17:31:31 on Apr 04,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/fulladder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,24 +20,24 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity fulladder
 # -- Compiling architecture rtl of fulladder
-# End time: 07:59:53 on Feb 20,2021, Elapsed time: 0:00:01
+# End time: 17:31:31 on Apr 04,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/dev/labs/lab1/simulation/modelsim/fulladder.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 07:59:53 on Feb 20,2021
+# Start time: 17:31:31 on Apr 04,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/simulation/modelsim/fulladder.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity fulladder_vhd_tst
 # -- Compiling architecture fulladder_arch of fulladder_vhd_tst
-# End time: 07:59:53 on Feb 20,2021, Elapsed time: 0:00:00
+# End time: 17:31:32 on Apr 04,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  fulladder
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" fulladder 
-# Start time: 07:59:53 on Feb 20,2021
+# Start time: 17:31:32 on Apr 04,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,64 +50,20 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-vcom -93 -work work C:/dev/labs/lab1/fulladder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:00:05 on Feb 20,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/fulladder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity fulladder
-# -- Compiling architecture rtl of fulladder
-# End time: 08:00:05 on Feb 20,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -93 -work work C:/dev/labs/lab1/simulation/modelsim/fulladder.vht
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:00:05 on Feb 20,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/simulation/modelsim/fulladder.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity fulladder_vhd_tst
-# -- Compiling architecture fulladder_arch of fulladder_vhd_tst
-# End time: 08:00:06 on Feb 20,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -93 -work work C:/dev/labs/lab1/fulladder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:00:14 on Feb 20,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/fulladder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity fulladder
-# -- Compiling architecture rtl of fulladder
-# End time: 08:00:14 on Feb 20,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -93 -work work C:/dev/labs/lab1/simulation/modelsim/fulladder.vht
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:00:14 on Feb 20,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab1/simulation/modelsim/fulladder.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity fulladder_vhd_tst
-# -- Compiling architecture fulladder_arch of fulladder_vhd_tst
-# End time: 08:00:14 on Feb 20,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+run
+run
 vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.fulladder_vhd_tst
-# End time: 08:00:30 on Feb 20,2021, Elapsed time: 0:00:37
+# End time: 17:32:04 on Apr 04,2021, Elapsed time: 0:00:32
 # Errors: 0, Warnings: 0
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.fulladder_vhd_tst 
-# Start time: 08:00:30 on Feb 20,2021
+# Start time: 17:32:04 on Apr 04,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.fulladder_vhd_tst(fulladder_arch)
 # Loading ieee.numeric_std(body)
 # Loading work.fulladder(rtl)
-add wave  \
+add wave -position insertpoint  \
 sim:/fulladder_vhd_tst/a1 \
 sim:/fulladder_vhd_tst/a2 \
 sim:/fulladder_vhd_tst/b1 \
@@ -119,5 +75,8 @@ sim:/fulladder_vhd_tst/o_sum2
 run
 run
 run
-# End time: 08:07:11 on Feb 20,2021, Elapsed time: 0:06:41
+run
+run
+run
+# End time: 17:32:39 on Apr 04,2021, Elapsed time: 0:00:35
 # Errors: 0, Warnings: 0
