@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/dev/labs/CPU8bit2/CPU8bit2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:05:42 on Mar 29,2021
+# Start time: 13:31:46 on Apr 06,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/CPU8bit2/CPU8bit2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,6 +21,785 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity CPU8BIT2
 # -- Compiling architecture CPU_ARCH of CPU8BIT2
-# End time: 22:05:43 on Mar 29,2021, Elapsed time: 0:00:01
+# End time: 13:31:46 on Apr 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+# vcom -93 -work work {C:/dev/labs/CPU8bit2/testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:47 on Apr 06,2021
+# vcom -reportprogress 300 -93 -work work C:/dev/labs/CPU8bit2/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 13:31:47 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  testbenj
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" testbenj 
+# Start time: 13:31:47 on Apr 06,2021
+# ** Error: (vsim-3170) Could not find 'testbenj'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/cyclonev
+#             C:/dev/labs/CPU8bit2/simulation/modelsim/rtl_work
+#             C:/dev/labs/CPU8bit2/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./CPU8bit2_run_msim_rtl_vhdl.do PAUSED at line 12
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:54 on Apr 06,2021
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity cpu2system
+# -- Skipping entity cpu8bit2
+# -- Skipping configuration tb_cfg
+# -- Skipping entity testbench
+# End time: 13:31:54 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:57 on Apr 06,2021
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CPU8BIT2
+# -- Compiling architecture CPU_ARCH of CPU8BIT2
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 13:31:57 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/dev/labs/CPU8bit2/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:58 on Apr 06,2021
+# vcom -reportprogress 300 -93 -work work C:/dev/labs/CPU8bit2/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 13:31:58 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.cpu2system
+# vsim work.cpu2system 
+# Start time: 13:31:47 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# ** Warning: (vsim-3473) Component instance "RAM : sram64kx8" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu2system File: C:/dev/labs/CPU8bit2/testbench.vhd
+vsim work.cpu8bit2
+# End time: 13:32:19 on Apr 06,2021, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 1
+# vsim work.cpu8bit2 
+# Start time: 13:32:19 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+add wave -position insertpoint  \
+sim:/cpu8bit2/data \
+sim:/cpu8bit2/adress \
+sim:/cpu8bit2/oe \
+sim:/cpu8bit2/we \
+sim:/cpu8bit2/rst \
+sim:/cpu8bit2/clk \
+sim:/cpu8bit2/akku \
+sim:/cpu8bit2/adreg \
+sim:/cpu8bit2/pc \
+sim:/cpu8bit2/states
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.testbench
+# End time: 13:33:14 on Apr 06,2021, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 4
+# vsim work.testbench 
+# Start time: 13:33:14 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# ** Warning: (vsim-3473) Component instance "RAM : sram64kx8" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS File: C:/dev/labs/CPU8bit2/testbench.vhd
+add wave -position insertpoint  \
+sim:/testbench/clk \
+sim:/testbench/reset
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1400 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1400 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1600 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1600 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1800 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1800 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2 us  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2 us  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2400 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2400 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2600 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2600 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2800 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2800 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3 us  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3 us  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3400 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3400 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3600 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3600 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3800 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3800 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4 us  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4 us  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4050 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4100 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# Load canceled
+vsim work.cpu8bit2 work.testbench
+# End time: 13:41:53 on Apr 06,2021, Elapsed time: 0:08:39
+# Errors: 0, Warnings: 157
+# vsim work.cpu8bit2 work.testbench 
+# Start time: 13:41:53 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# ** Warning: (vsim-3473) Component instance "RAM : sram64kx8" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS File: C:/dev/labs/CPU8bit2/testbench.vhd
+vsim work.cpu8bit2 work.testbench
+# End time: 13:42:10 on Apr 06,2021, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim work.cpu8bit2 work.testbench 
+# Start time: 13:42:10 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# ** Warning: (vsim-3473) Component instance "RAM : sram64kx8" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS File: C:/dev/labs/CPU8bit2/testbench.vhd
+add wave -position insertpoint  \
+sim:/cpu8bit2/data \
+sim:/cpu8bit2/adress \
+sim:/cpu8bit2/oe \
+sim:/cpu8bit2/we \
+sim:/cpu8bit2/rst \
+sim:/cpu8bit2/clk \
+sim:/cpu8bit2/akku \
+sim:/cpu8bit2/adreg \
+sim:/cpu8bit2/pc \
+sim:/cpu8bit2/states
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu8bit2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 250 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 400 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 800 ns  Iteration: 2  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 850 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 900 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 2  Instance: /testbench/SYS/CPU
+add wave -position insertpoint  \
+sim:/cpu8bit2/data \
+sim:/cpu8bit2/adress \
+sim:/cpu8bit2/oe \
+sim:/cpu8bit2/we \
+sim:/cpu8bit2/rst \
+sim:/cpu8bit2/clk \
+sim:/cpu8bit2/akku \
+sim:/cpu8bit2/adreg \
+sim:/cpu8bit2/pc \
+sim:/cpu8bit2/states
+add wave -position insertpoint  \
+sim:/cpu8bit2/data \
+sim:/cpu8bit2/adress \
+sim:/cpu8bit2/oe \
+sim:/cpu8bit2/we \
+sim:/cpu8bit2/rst \
+sim:/cpu8bit2/clk \
+sim:/cpu8bit2/akku \
+sim:/cpu8bit2/adreg \
+sim:/cpu8bit2/pc \
+sim:/cpu8bit2/states
+vlib cpu2system
+vmap CPU cpu2system
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap CPU cpu2system 
+# Modifying modelsim.ini
+vcom -93 -work work C:/dev/labs/CPU8bit2/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:58 on Apr 06,2021
+# vcom -reportprogress 300 -93 -work work C:/dev/labs/CPU8bit2/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 13:43:58 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 13:44:03 on Apr 06,2021, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 44
+# vsim work.testbench 
+# Start time: 13:44:03 on Apr 06,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# ** Warning: (vsim-3473) Component instance "RAM : sram64kx8" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS File: C:/dev/labs/CPU8bit2/testbench.vhd
+vlog -work cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:44:59 on Apr 06,2021
+# vlog -reportprogress 300 -work cpu2system -refresh -force_refresh 
+# End time: 13:44:59 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:44:59 on Apr 06,2021
+# vcom -reportprogress 300 -work cpu2system -refresh -force_refresh 
+# End time: 13:44:59 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:02 on Apr 06,2021
+# vlog -reportprogress 300 -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh 
+# End time: 13:45:02 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:02 on Apr 06,2021
+# vcom -reportprogress 300 -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh 
+# End time: 13:45:02 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:10 on Apr 06,2021
+# vlog -reportprogress 300 -work cpu2system -refresh -force_refresh 
+# End time: 13:45:10 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:10 on Apr 06,2021
+# vcom -reportprogress 300 -work cpu2system -refresh -force_refresh 
+# End time: 13:45:10 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:12 on Apr 06,2021
+# vlog -reportprogress 300 -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh 
+# End time: 13:45:12 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:12 on Apr 06,2021
+# vcom -reportprogress 300 -work C:/dev/labs/CPU8bit2/simulation/modelsim/cpu2system -refresh -force_refresh 
+# End time: 13:45:12 on Apr 06,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:46:00 on Apr 06,2021, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 1

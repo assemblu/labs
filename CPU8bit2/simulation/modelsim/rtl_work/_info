@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 !s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
@@ -9,48 +10,157 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/dev/labs/CPU8bit2/simulation/modelsim
+Ecpu2system
+Z1 w1617450778
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8C:/dev/labs/CPU8bit2/testbench.vhd
+Z5 FC:/dev/labs/CPU8bit2/testbench.vhd
+l0
+L5 1
+VJL`@?b72@IaOa28FnW6Wf3
+!s100 f2]=]k?A;KoABHn3zUfh;2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1617709438
+!i10b 1
+Z8 !s108 1617709438.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/dev/labs/CPU8bit2/testbench.vhd|
+Z10 !s107 C:/dev/labs/CPU8bit2/testbench.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Amain
+R2
+R3
+Z13 DEx4 work 10 cpu2system 0 22 JL`@?b72@IaOa28FnW6Wf3
+!i122 3
+l39
+Z14 L11 37
+Z15 VH>8j:GQTGjGb>alzZlLUm1
+Z16 !s100 hDId?>d7e3oUOb^mT5K9R0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
 Ecpu8bit2
-Z1 w1617048170
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z17 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z18 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+31
+Z19 !s110 1617708706
+!i10b 1
+Z20 w1617450777
 !i122 0
 R0
-Z6 8C:/dev/labs/CPU8bit2/CPU8bit2.vhd
-Z7 FC:/dev/labs/CPU8bit2/CPU8bit2.vhd
+Z21 8C:/dev/labs/CPU8bit2/CPU8bit2.vhd
+Z22 FC:/dev/labs/CPU8bit2/CPU8bit2.vhd
 l0
 L16 1
 VRkkAfgnEBLPQ5NGjm1mQz2
 !s100 2lKj]:GN05Pd[`ckdB9EH0
-Z8 OV;C;2020.1;71
-31
-Z9 !s110 1617048343
-!i10b 1
-Z10 !s108 1617048342.000000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/dev/labs/CPU8bit2/CPU8bit2.vhd|
-!s107 C:/dev/labs/CPU8bit2/CPU8bit2.vhd|
+R6
+Z23 !s108 1617708706.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/dev/labs/CPU8bit2/CPU8bit2.vhd|
+Z25 !s107 C:/dev/labs/CPU8bit2/CPU8bit2.vhd|
 !i113 1
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
+R11
+R12
 Acpu_arch
+R17
+R18
 R2
 R3
-R4
-R5
 DEx4 work 8 cpu8bit2 0 22 RkkAfgnEBLPQ5NGjm1mQz2
+31
+R19
+!i10b 1
 !i122 0
 l30
 L25 46
 V<UdF@U;JiVS_jgh5D:S9=3
 !s100 hTnaCdVGC92UTH:7Jl^=f3
-R8
-31
-R9
-!i10b 1
-R10
-R11
-Z14 !s107 C:/dev/labs/CPU8bit2/CPU8bit2.vhd|
+R6
+R23
+R24
+R25
 !i113 1
+R11
 R12
+Ctb_cfg
+etestbench
+atestmain
 R13
+DAx4 work 9 testbench 8 testmain 22 SW7[>lo8aM@H>KI`bo:n<1
+R2
+R3
+Z26 DEx4 work 9 testbench 0 22 l0e060P;GXOZA5ihP@>D92
+!i122 3
+R1
+R0
+R4
+R5
+l0
+L94 1
+VjE06PJGCM96h[1=L3I?am3
+!s100 DPlHiPcl=KlD=oEIW5kSP2
+R6
+31
+R7
+!i10b 0
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+R1
+R2
+R3
+!i122 3
+R0
+R4
+R5
+l0
+L52 1
+Vl0e060P;GXOZA5ihP@>D92
+!s100 7B]LMoOi;C9L]2M;2f4Q@3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Atestmain
+R2
+R3
+R26
+!i122 3
+l64
+Z27 L55 38
+Z28 VSW7[>lo8aM@H>KI`bo:n<1
+Z29 !s100 I:7a80dWM?YR7SEfD_4>B0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

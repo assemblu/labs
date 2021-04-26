@@ -1,5 +1,9 @@
 vendor_name = ModelSim
 source_file = 1, C:/dev/labs/CPU8bit2/CPU8bit2.vhd
+source_file = 1, C:/dev/labs/minimal8bitcpu/sram64kx8.vhd
+source_file = 1, C:/dev/labs/minimal8bitcpu/testbench.vhd
+source_file = 1, C:/dev/labs/CPU8bit2/sram64kx8.vhd
+source_file = 1, C:/dev/labs/CPU8bit2/testbench.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

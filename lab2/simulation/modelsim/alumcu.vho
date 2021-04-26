@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "03/27/2021 09:45:24"
+-- DATE "04/12/2021 23:05:29"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -32,13 +32,12 @@ LIBRARY CYCLONEV;
 LIBRARY IEEE;
 USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
 USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
-USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	alumcu IS
     PORT (
-	opcode : IN IEEE.NUMERIC_STD.unsigned(13 DOWNTO 0);
-	aluOut : BUFFER IEEE.NUMERIC_STD.unsigned(7 DOWNTO 0)
+	opcode : IN std_logic_vector(13 DOWNTO 0);
+	aluOut : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END alumcu;
 
@@ -97,8 +96,8 @@ SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 
 BEGIN
 
-ww_opcode <= IEEE.STD_LOGIC_1164.STD_LOGIC_VECTOR(opcode);
-aluOut <= IEEE.NUMERIC_STD.UNSIGNED(ww_aluOut);
+ww_opcode <= opcode;
+aluOut <= ww_aluOut;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

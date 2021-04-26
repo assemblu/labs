@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "03/29/2021 22:05:19"
+-- DATE "04/06/2021 13:31:08"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,10 +38,10 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	CPU8BIT2 IS
     PORT (
-	data : INOUT std_logic_vector(7 DOWNTO 0);
-	adress : OUT std_logic_vector(5 DOWNTO 0);
-	oe : OUT std_logic;
-	we : OUT std_logic;
+	data : BUFFER std_logic_vector(7 DOWNTO 0);
+	adress : BUFFER std_logic_vector(5 DOWNTO 0);
+	oe : BUFFER std_logic;
+	we : BUFFER std_logic;
 	rst : IN std_logic;
 	clk : IN std_logic
 	);
@@ -78,6 +78,7 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
+SIGNAL ww_data : std_logic_vector(7 DOWNTO 0);
 SIGNAL ww_adress : std_logic_vector(5 DOWNTO 0);
 SIGNAL ww_oe : std_logic;
 SIGNAL ww_we : std_logic;
@@ -163,6 +164,7 @@ SIGNAL \ALT_INV_Add1~1_sumout\ : std_logic;
 
 BEGIN
 
+data <= ww_data;
 adress <= ww_adress;
 oe <= ww_oe;
 we <= ww_we;
@@ -323,7 +325,7 @@ PORT MAP (
 	i => akku(0),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(0));
+	o => ww_data(0));
 
 -- Location: IOOBUF_X89_Y20_N62
 \data[1]~output\ : cyclonev_io_obuf
@@ -337,7 +339,7 @@ PORT MAP (
 	i => akku(1),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(1));
+	o => ww_data(1));
 
 -- Location: IOOBUF_X89_Y21_N39
 \data[2]~output\ : cyclonev_io_obuf
@@ -351,7 +353,7 @@ PORT MAP (
 	i => akku(2),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(2));
+	o => ww_data(2));
 
 -- Location: IOOBUF_X89_Y20_N96
 \data[3]~output\ : cyclonev_io_obuf
@@ -365,7 +367,7 @@ PORT MAP (
 	i => akku(3),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(3));
+	o => ww_data(3));
 
 -- Location: IOOBUF_X89_Y21_N5
 \data[4]~output\ : cyclonev_io_obuf
@@ -379,7 +381,7 @@ PORT MAP (
 	i => akku(4),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(4));
+	o => ww_data(4));
 
 -- Location: IOOBUF_X89_Y20_N79
 \data[5]~output\ : cyclonev_io_obuf
@@ -393,7 +395,7 @@ PORT MAP (
 	i => akku(5),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(5));
+	o => ww_data(5));
 
 -- Location: IOOBUF_X89_Y21_N22
 \data[6]~output\ : cyclonev_io_obuf
@@ -407,7 +409,7 @@ PORT MAP (
 	i => akku(6),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(6));
+	o => ww_data(6));
 
 -- Location: IOOBUF_X89_Y20_N45
 \data[7]~output\ : cyclonev_io_obuf
@@ -421,7 +423,7 @@ PORT MAP (
 	i => akku(7),
 	oe => \Equal2~0_combout\,
 	devoe => ww_devoe,
-	o => data(7));
+	o => ww_data(7));
 
 -- Location: IOIBUF_X89_Y25_N21
 \clk~input\ : cyclonev_io_ibuf
@@ -456,7 +458,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(0),
+	i => ww_data(0),
 	o => \data[0]~input_o\);
 
 -- Location: LABCELL_X88_Y21_N0
@@ -513,7 +515,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(7),
+	i => ww_data(7),
 	o => \data[7]~input_o\);
 
 -- Location: IOIBUF_X89_Y21_N21
@@ -524,7 +526,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(6),
+	i => ww_data(6),
 	o => \data[6]~input_o\);
 
 -- Location: IOIBUF_X89_Y20_N78
@@ -535,7 +537,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(5),
+	i => ww_data(5),
 	o => \data[5]~input_o\);
 
 -- Location: IOIBUF_X89_Y21_N4
@@ -546,7 +548,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(4),
+	i => ww_data(4),
 	o => \data[4]~input_o\);
 
 -- Location: IOIBUF_X89_Y20_N95
@@ -557,7 +559,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(3),
+	i => ww_data(3),
 	o => \data[3]~input_o\);
 
 -- Location: IOIBUF_X89_Y21_N38
@@ -568,7 +570,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(2),
+	i => ww_data(2),
 	o => \data[2]~input_o\);
 
 -- Location: IOIBUF_X89_Y20_N61
@@ -579,7 +581,7 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => data(1),
+	i => ww_data(1),
 	o => \data[1]~input_o\);
 
 -- Location: LABCELL_X88_Y21_N3

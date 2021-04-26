@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/dev/labs/lab2/alumcu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:47:57 on Mar 27,2021
+# Start time: 17:24:04 on Apr 20,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/alumcu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,12 +20,12 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alumcu
 # -- Compiling architecture behavior of alumcu
-# End time: 09:47:58 on Mar 27,2021, Elapsed time: 0:00:01
+# End time: 17:24:04 on Apr 20,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/dev/labs/lab2/simulation/modelsim/alumcu.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:47:58 on Mar 27,2021
+# Start time: 17:24:04 on Apr 20,2021
 # vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/simulation/modelsim/alumcu.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,55 +36,10 @@
 # ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 1.
 # ** Error (suppressible): C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(66): (vcom-1272) Length of expected is 7; length of actual is 6.
 # ** Note: C:/dev/labs/lab2/simulation/modelsim/alumcu.vht(70): VHDL Compiler exiting
-# End time: 09:47:58 on Mar 27,2021, Elapsed time: 0:00:00
+# End time: 17:24:04 on Apr 20,2021, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 # Error in macro ./alumcu_run_msim_rtl_vhdl.do line 10
 # C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
 # "vcom -93 -work work {C:/dev/labs/lab2/simulation/modelsim/alumcu.vht}"
-vcom -93 -work work C:/dev/labs/lab2/alumcu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 09:48:32 on Mar 27,2021
-# vcom -reportprogress 300 -93 -work work C:/dev/labs/lab2/alumcu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity alumcu
-# -- Compiling architecture behavior of alumcu
-# End time: 09:48:32 on Mar 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.alumcu
-# vsim work.alumcu 
-# Start time: 09:48:35 on Mar 27,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.alumcu(behavior)
-add wave -position insertpoint  \
-sim:/alumcu/opcode \
-sim:/alumcu/aluOut \
-sim:/alumcu/fileRegister \
-sim:/alumcu/Wreg
-force -freeze sim:/alumcu/opcode 00100000000001 0
-run
-force -freeze sim:/alumcu/opcode 00100010000001 0
-run
-force -freeze sim:/alumcu/opcode 00011100000000 0
-run
-force -freeze sim:/alumcu/opcode 00011110000000 0
-run
-force -freeze sim:/alumcu/opcode 00010100000000 0
-run
-force -freeze sim:/alumcu/opcode 00010110000000 0
-run
-force -freeze sim:/alumcu/opcode 00101000000000 0
-run
-force -freeze sim:/alumcu/opcode 00101010000000 0
-run
-force -freeze sim:/alumcu/opcode 00000100000000 0
-run
-# End time: 10:19:40 on Mar 27,2021, Elapsed time: 0:31:05
-# Errors: 0, Warnings: 0

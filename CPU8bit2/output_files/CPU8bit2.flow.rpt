@@ -1,5 +1,5 @@
 Flow report for CPU8bit2
-Mon Mar 29 22:05:19 2021
+Tue Apr 06 13:31:08 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 29 22:05:19 2021       ;
+; Flow Status                     ; Successful - Tue Apr 06 13:31:08 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; CPU8bit2                                    ;
 ; Top-level Entity Name           ; CPU8BIT2                                    ;
@@ -68,30 +68,41 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/29/2021 22:02:55 ;
+; Start date & time ; 04/06/2021 13:29:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU8bit2            ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                               ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 44883553553243.161704817518668         ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                          ;
++------------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                                ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++------------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                          ; 44883553553243.161770856316044         ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME                       ; NA                                     ; --            ; --          ; testbenj                          ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST                ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST                ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST                ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST                ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH           ; testbenj                               ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT                         ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                            ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS                   ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                            ; testbench.vhd                          ; --            ; --          ; testbenj                          ;
+; EDA_TEST_BENCH_MODULE_NAME                     ; testbenj                               ; --            ; --          ; testbenj                          ;
+; EDA_TEST_BENCH_NAME                            ; testbenj                               ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                                 ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY ; C:\dev\labs\CPU8bit2\simulation        ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP                         ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP                         ; 0                                      ; --            ; --          ; --                                ;
+; PARTITION_COLOR                                ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL            ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE                         ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL                      ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION                  ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY                       ; output_files                           ; --            ; --          ; --                                ;
++------------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -99,12 +110,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4849 MB             ; 00:00:40                           ;
-; Fitter               ; 00:01:28     ; 1.0                     ; 6212 MB             ; 00:01:41                           ;
-; Assembler            ; 00:00:18     ; 1.0                     ; 4831 MB             ; 00:00:11                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 5109 MB             ; 00:00:07                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4849 MB             ; 00:00:36                           ;
+; Fitter               ; 00:01:02     ; 1.0                     ; 6203 MB             ; 00:01:27                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4835 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 5112 MB             ; 00:00:07                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
-; Total                ; 00:02:19     ; --                      ; --                  ; 00:02:40                           ;
+; Total                ; 00:01:39     ; --                      ; --                  ; 00:02:20                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,11 +124,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-N3AS8MC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-N3AS8MC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-N3AS8MC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-N3AS8MC  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-N3AS8MC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-9K25DNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-9K25DNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-9K25DNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-9K25DNB  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-9K25DNB  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
