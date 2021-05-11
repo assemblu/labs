@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "04/26/2021 17:22:22"
+// DATE "05/09/2021 00:16:35"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -80,7 +80,7 @@ wire \clk~input_o ;
 wire \clk~inputCLKENA0_outclk ;
 wire \data[0]~input_o ;
 wire \Add1~9_sumout ;
-wire \RESULT~0_combout ;
+wire \akku~1_combout ;
 wire \rst~input_o ;
 wire \data[7]~input_o ;
 wire \data[6]~input_o ;
@@ -91,26 +91,26 @@ wire \data[2]~input_o ;
 wire \data[1]~input_o ;
 wire \Add1~10 ;
 wire \Add1~13_sumout ;
-wire \RESULT~1_combout ;
+wire \akku~2_combout ;
 wire \Mux0~0_combout ;
 wire \Add1~14 ;
 wire \Add1~17_sumout ;
-wire \RESULT~2_combout ;
+wire \akku~3_combout ;
 wire \Add1~18 ;
 wire \Add1~21_sumout ;
-wire \RESULT~3_combout ;
+wire \akku~4_combout ;
 wire \Add1~22 ;
 wire \Add1~25_sumout ;
-wire \RESULT~4_combout ;
+wire \akku~5_combout ;
 wire \Add1~26 ;
 wire \Add1~29_sumout ;
-wire \RESULT~5_combout ;
+wire \akku~6_combout ;
 wire \Add1~30 ;
 wire \Add1~33_sumout ;
-wire \RESULT~6_combout ;
+wire \akku~7_combout ;
 wire \Add1~34 ;
 wire \Add1~5_sumout ;
-wire \RESULT~7_combout ;
+wire \akku~8_combout ;
 wire \Add1~6 ;
 wire \Add1~1_sumout ;
 wire \akku[8]~0_combout ;
@@ -457,9 +457,9 @@ defparam \Add1~9 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N48
-cyclonev_lcell_comb \RESULT~0 (
+cyclonev_lcell_comb \akku~1 (
 // Equation(s):
-// \RESULT~0_combout  = ( !\data[0]~input_o  & ( !akku[0] ) )
+// \akku~1_combout  = ( !\data[0]~input_o  & ( !akku[0] ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -470,14 +470,14 @@ cyclonev_lcell_comb \RESULT~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~0_combout ),
+	.combout(\akku~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~0 .extended_lut = "off";
-defparam \RESULT~0 .lut_mask = 64'hF0F0F0F000000000;
-defparam \RESULT~0 .shared_arith = "off";
+defparam \akku~1 .extended_lut = "off";
+defparam \akku~1 .lut_mask = 64'hF0F0F0F000000000;
+defparam \akku~1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: IOIBUF_X89_Y16_N4
@@ -594,9 +594,9 @@ defparam \Add1~13 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N36
-cyclonev_lcell_comb \RESULT~1 (
+cyclonev_lcell_comb \akku~2 (
 // Equation(s):
-// \RESULT~1_combout  = ( !\data[1]~input_o  & ( !akku[1] ) )
+// \akku~2_combout  = ( !\data[1]~input_o  & ( !akku[1] ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -607,14 +607,14 @@ cyclonev_lcell_comb \RESULT~1 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~1_combout ),
+	.combout(\akku~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~1 .extended_lut = "off";
-defparam \RESULT~1 .lut_mask = 64'hF0F0F0F000000000;
-defparam \RESULT~1 .shared_arith = "off";
+defparam \akku~2 .extended_lut = "off";
+defparam \akku~2 .lut_mask = 64'hF0F0F0F000000000;
+defparam \akku~2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N42
@@ -645,7 +645,7 @@ defparam \Mux0~0 .shared_arith = "off";
 dffeas \akku[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~13_sumout ),
-	.asdata(\RESULT~1_combout ),
+	.asdata(\akku~2_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -686,9 +686,9 @@ defparam \Add1~17 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N33
-cyclonev_lcell_comb \RESULT~2 (
+cyclonev_lcell_comb \akku~3 (
 // Equation(s):
-// \RESULT~2_combout  = ( !akku[2] & ( !\data[2]~input_o  ) )
+// \akku~3_combout  = ( !akku[2] & ( !\data[2]~input_o  ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -699,21 +699,21 @@ cyclonev_lcell_comb \RESULT~2 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~2_combout ),
+	.combout(\akku~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~2 .extended_lut = "off";
-defparam \RESULT~2 .lut_mask = 64'hFF00FF0000000000;
-defparam \RESULT~2 .shared_arith = "off";
+defparam \akku~3 .extended_lut = "off";
+defparam \akku~3 .lut_mask = 64'hFF00FF0000000000;
+defparam \akku~3 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N8
 dffeas \akku[2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~17_sumout ),
-	.asdata(\RESULT~2_combout ),
+	.asdata(\akku~3_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -754,9 +754,9 @@ defparam \Add1~21 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N51
-cyclonev_lcell_comb \RESULT~3 (
+cyclonev_lcell_comb \akku~4 (
 // Equation(s):
-// \RESULT~3_combout  = ( !akku[3] & ( !\data[3]~input_o  ) )
+// \akku~4_combout  = ( !akku[3] & ( !\data[3]~input_o  ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -767,21 +767,21 @@ cyclonev_lcell_comb \RESULT~3 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~3_combout ),
+	.combout(\akku~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~3 .extended_lut = "off";
-defparam \RESULT~3 .lut_mask = 64'hF0F0F0F000000000;
-defparam \RESULT~3 .shared_arith = "off";
+defparam \akku~4 .extended_lut = "off";
+defparam \akku~4 .lut_mask = 64'hF0F0F0F000000000;
+defparam \akku~4 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N11
 dffeas \akku[3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~21_sumout ),
-	.asdata(\RESULT~3_combout ),
+	.asdata(\akku~4_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -822,9 +822,9 @@ defparam \Add1~25 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N57
-cyclonev_lcell_comb \RESULT~4 (
+cyclonev_lcell_comb \akku~5 (
 // Equation(s):
-// \RESULT~4_combout  = ( !akku[4] & ( !\data[4]~input_o  ) )
+// \akku~5_combout  = ( !akku[4] & ( !\data[4]~input_o  ) )
 
 	.dataa(!\data[4]~input_o ),
 	.datab(gnd),
@@ -835,21 +835,21 @@ cyclonev_lcell_comb \RESULT~4 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~4_combout ),
+	.combout(\akku~5_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~4 .extended_lut = "off";
-defparam \RESULT~4 .lut_mask = 64'hAAAAAAAA00000000;
-defparam \RESULT~4 .shared_arith = "off";
+defparam \akku~5 .extended_lut = "off";
+defparam \akku~5 .lut_mask = 64'hAAAAAAAA00000000;
+defparam \akku~5 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N14
 dffeas \akku[4] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~25_sumout ),
-	.asdata(\RESULT~4_combout ),
+	.asdata(\akku~5_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -890,9 +890,9 @@ defparam \Add1~29 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N54
-cyclonev_lcell_comb \RESULT~5 (
+cyclonev_lcell_comb \akku~6 (
 // Equation(s):
-// \RESULT~5_combout  = ( !akku[5] & ( !\data[5]~input_o  ) )
+// \akku~6_combout  = ( !akku[5] & ( !\data[5]~input_o  ) )
 
 	.dataa(gnd),
 	.datab(!\data[5]~input_o ),
@@ -903,21 +903,21 @@ cyclonev_lcell_comb \RESULT~5 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~5_combout ),
+	.combout(\akku~6_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~5 .extended_lut = "off";
-defparam \RESULT~5 .lut_mask = 64'hCCCCCCCC00000000;
-defparam \RESULT~5 .shared_arith = "off";
+defparam \akku~6 .extended_lut = "off";
+defparam \akku~6 .lut_mask = 64'hCCCCCCCC00000000;
+defparam \akku~6 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N17
 dffeas \akku[5] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~29_sumout ),
-	.asdata(\RESULT~5_combout ),
+	.asdata(\akku~6_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -958,9 +958,9 @@ defparam \Add1~33 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N39
-cyclonev_lcell_comb \RESULT~6 (
+cyclonev_lcell_comb \akku~7 (
 // Equation(s):
-// \RESULT~6_combout  = ( !akku[6] & ( !\data[6]~input_o  ) )
+// \akku~7_combout  = ( !akku[6] & ( !\data[6]~input_o  ) )
 
 	.dataa(!\data[6]~input_o ),
 	.datab(gnd),
@@ -971,21 +971,21 @@ cyclonev_lcell_comb \RESULT~6 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~6_combout ),
+	.combout(\akku~7_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~6 .extended_lut = "off";
-defparam \RESULT~6 .lut_mask = 64'hAAAAAAAA00000000;
-defparam \RESULT~6 .shared_arith = "off";
+defparam \akku~7 .extended_lut = "off";
+defparam \akku~7 .lut_mask = 64'hAAAAAAAA00000000;
+defparam \akku~7 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N20
 dffeas \akku[6] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~33_sumout ),
-	.asdata(\RESULT~6_combout ),
+	.asdata(\akku~7_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -1026,9 +1026,9 @@ defparam \Add1~5 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X88_Y21_N45
-cyclonev_lcell_comb \RESULT~7 (
+cyclonev_lcell_comb \akku~8 (
 // Equation(s):
-// \RESULT~7_combout  = (!akku[7] & !\data[7]~input_o )
+// \akku~8_combout  = (!akku[7] & !\data[7]~input_o )
 
 	.dataa(!akku[7]),
 	.datab(gnd),
@@ -1039,21 +1039,21 @@ cyclonev_lcell_comb \RESULT~7 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\RESULT~7_combout ),
+	.combout(\akku~8_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \RESULT~7 .extended_lut = "off";
-defparam \RESULT~7 .lut_mask = 64'hAA00AA00AA00AA00;
-defparam \RESULT~7 .shared_arith = "off";
+defparam \akku~8 .extended_lut = "off";
+defparam \akku~8 .lut_mask = 64'hAA00AA00AA00AA00;
+defparam \akku~8 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X88_Y21_N23
 dffeas \akku[7] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~5_sumout ),
-	.asdata(\RESULT~7_combout ),
+	.asdata(\akku~8_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),
@@ -1269,7 +1269,7 @@ defparam \states[0] .power_up = "low";
 dffeas \akku[0] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(\Add1~9_sumout ),
-	.asdata(\RESULT~0_combout ),
+	.asdata(\akku~1_combout ),
 	.clrn(\rst~input_o ),
 	.aload(gnd),
 	.sclr(gnd),

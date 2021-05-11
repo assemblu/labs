@@ -41,7 +41,7 @@ Ecpu2system
 Z16 w1585066868
 R3
 R2
-!i122 2
+!i122 12
 R6
 Z17 8C:/dev/labs/minimal8bitcpu/testbench.vhd
 Z18 FC:/dev/labs/minimal8bitcpu/testbench.vhd
@@ -51,60 +51,60 @@ V>PZz>5`J6fB<f<01=i]U31
 !s100 f2]=]k?A;KoABHn3zUfh;2
 R9
 32
-R10
+Z19 !s110 1620511231
 !i10b 1
-R11
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/dev/labs/minimal8bitcpu/testbench.vhd|
-!s107 C:/dev/labs/minimal8bitcpu/testbench.vhd|
+Z20 !s108 1620511231.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/dev/labs/minimal8bitcpu/testbench.vhd|
+Z22 !s107 C:/dev/labs/minimal8bitcpu/testbench.vhd|
 !i113 1
 R14
 R15
 Amain
 R3
 R2
-Z20 DEx4 work 10 cpu2system 0 22 >PZz>5`J6fB<f<01=i]U31
-!i122 2
+Z23 DEx4 work 10 cpu2system 0 22 >PZz>5`J6fB<f<01=i]U31
+!i122 12
 l39
-L11 37
-Vl8]gc0:QcD^RTBah32PP50
-!s100 hDId?>d7e3oUOb^mT5K9R0
+Z24 L11 37
+Z25 Vl8]gc0:QcD^RTBah32PP50
+Z26 !s100 hDId?>d7e3oUOb^mT5K9R0
 R9
 32
-R10
-!i10b 1
-R11
 R19
-Z21 !s107 C:/dev/labs/minimal8bitcpu/testbench.vhd|
+!i10b 1
+R20
+R21
+R22
 !i113 1
 R14
 R15
 Ecpu8bit2
-Z22 w1003592864
+Z27 w1003592864
 R0
-Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R2
 !i122 0
 R6
-Z24 8C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd
-Z25 FC:/dev/labs/minimal8bitcpu/CPU8bit2.vhd
+Z29 8C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd
+Z30 FC:/dev/labs/minimal8bitcpu/CPU8bit2.vhd
 l0
 L16 1
 VGL3mnF;b8A8<Ez;_aS8_e2
 !s100 2lKj]:GN05Pd[`ckdB9EH0
 R9
 32
-Z26 !s110 1617712420
+Z31 !s110 1617712420
 !i10b 1
-Z27 !s108 1617712420.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd|
-Z29 !s107 C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd|
+Z32 !s108 1617712420.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd|
+Z34 !s107 C:/dev/labs/minimal8bitcpu/CPU8bit2.vhd|
 !i113 1
 R14
 R15
 Acpu_arch
 R0
-R23
+R28
 R3
 R2
 DEx4 work 8 cpu8bit2 0 22 GL3mnF;b8A8<Ez;_aS8_e2
@@ -115,11 +115,11 @@ VX0XP_?c9Znd[@1Nf@GCTM0
 !s100 hTnaCdVGC92UTH:7Jl^=f3
 R9
 32
-R26
+R31
 !i10b 1
-R27
-R28
-R29
+R32
+R33
+R34
 !i113 1
 R14
 R15
@@ -171,12 +171,12 @@ R15
 Ctb_cfg
 etestbench
 atestmain
-R20
+R23
 DAx4 work 9 testbench 8 testmain 22 SWO8e942h=H[4TIEh[lLF0
 R3
 R2
-Z30 DEx4 work 9 testbench 0 22 2SJ]89Gh]R:Y4RQDV1YaF1
-!i122 2
+Z35 DEx4 work 9 testbench 0 22 2SJ]89Gh]R:Y4RQDV1YaF1
+!i122 12
 R16
 R6
 R17
@@ -187,11 +187,11 @@ VHZ3GJE[zFh=`3FiF:kYj82
 !s100 DPlHiPcl=KlD=oEIW5kSP2
 R9
 32
-R10
-!i10b 0
-R11
 R19
+!i10b 0
+R20
 R21
+R22
 !i113 1
 R14
 R15
@@ -199,7 +199,7 @@ Etestbench
 R16
 R3
 R2
-!i122 2
+!i122 12
 R6
 R17
 R18
@@ -209,30 +209,30 @@ V2SJ]89Gh]R:Y4RQDV1YaF1
 !s100 7B]LMoOi;C9L]2M;2f4Q@3
 R9
 32
-R10
-!i10b 1
-R11
 R19
+!i10b 1
+R20
 R21
+R22
 !i113 1
 R14
 R15
 Atestmain
 R3
 R2
-R30
-!i122 2
+R35
+!i122 12
 l64
-L55 38
-VSWO8e942h=H[4TIEh[lLF0
-!s100 I:7a80dWM?YR7SEfD_4>B0
+Z36 L55 38
+Z37 VSWO8e942h=H[4TIEh[lLF0
+Z38 !s100 I:7a80dWM?YR7SEfD_4>B0
 R9
 32
-R10
-!i10b 1
-R11
 R19
+!i10b 1
+R20
 R21
+R22
 !i113 1
 R14
 R15

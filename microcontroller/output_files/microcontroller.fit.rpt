@@ -1,5 +1,5 @@
 Fitter report for microcontroller
-Mon Apr 26 17:21:55 2021
+Sun May 09 00:16:07 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Apr 26 17:21:55 2021       ;
+; Fitter Status                   ; Successful - Sun May 09 00:16:07 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; microcontroller                             ;
 ; Top-level Entity Name           ; microcontroller                             ;
@@ -1458,38 +1458,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; data[0]             ;                   ;         ;
 ;      - Add1~9       ; 1                 ; 0       ;
 ;      - adreg~0      ; 1                 ; 0       ;
-;      - RESULT~0     ; 1                 ; 0       ;
+;      - akku~1       ; 1                 ; 0       ;
 ; data[1]             ;                   ;         ;
 ;      - Add1~13      ; 0                 ; 0       ;
 ;      - adreg~1      ; 0                 ; 0       ;
-;      - RESULT~1     ; 0                 ; 0       ;
+;      - akku~2       ; 0                 ; 0       ;
 ; data[2]             ;                   ;         ;
 ;      - Add1~17      ; 1                 ; 0       ;
 ;      - adreg~2      ; 1                 ; 0       ;
-;      - RESULT~2     ; 1                 ; 0       ;
+;      - akku~3       ; 1                 ; 0       ;
 ; data[3]             ;                   ;         ;
 ;      - Add1~21      ; 1                 ; 0       ;
 ;      - adreg~3      ; 1                 ; 0       ;
-;      - RESULT~3     ; 1                 ; 0       ;
+;      - akku~4       ; 1                 ; 0       ;
 ; data[4]             ;                   ;         ;
 ;      - Add1~25      ; 1                 ; 0       ;
 ;      - adreg~4      ; 1                 ; 0       ;
-;      - RESULT~4     ; 1                 ; 0       ;
+;      - akku~5       ; 1                 ; 0       ;
 ; data[5]             ;                   ;         ;
 ;      - Add1~29      ; 1                 ; 0       ;
 ;      - adreg~5      ; 1                 ; 0       ;
-;      - RESULT~5     ; 1                 ; 0       ;
+;      - akku~6       ; 1                 ; 0       ;
 ; data[6]             ;                   ;         ;
 ;      - Add1~33      ; 1                 ; 0       ;
 ;      - states~1     ; 1                 ; 0       ;
 ;      - states~2     ; 1                 ; 0       ;
-;      - RESULT~6     ; 1                 ; 0       ;
+;      - akku~7       ; 1                 ; 0       ;
 ; data[7]             ;                   ;         ;
 ;      - Add1~5       ; 0                 ; 0       ;
 ;      - states~0     ; 0                 ; 0       ;
 ;      - states~1     ; 0                 ; 0       ;
 ;      - states~2     ; 0                 ; 0       ;
-;      - RESULT~7     ; 0                 ; 0       ;
+;      - akku~8       ; 0                 ; 0       ;
 ; rst                 ;                   ;         ;
 ;      - states[0]    ; 1                 ; 0       ;
 ;      - states[1]    ; 1                 ; 0       ;
@@ -1807,10 +1807,10 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:20
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:09
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
@@ -1820,7 +1820,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.63 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1828,10 +1828,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file C:/dev/labs/microcontroller/output_files/microcontroller.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6209 megabytes
-    Info: Processing ended: Mon Apr 26 17:21:56 2021
-    Info: Elapsed time: 00:01:03
-    Info: Total CPU time (on all processors): 00:01:27
+    Info: Peak virtual memory: 6211 megabytes
+    Info: Processing ended: Sun May 09 00:16:08 2021
+    Info: Elapsed time: 00:01:09
+    Info: Total CPU time (on all processors): 00:01:33
 
 
 +----------------------------+

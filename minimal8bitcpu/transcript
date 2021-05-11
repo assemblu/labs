@@ -1,0 +1,946 @@
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 22:44:38 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+vsim work.testbench
+# End time: 22:44:55 on May 08,2021, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim work.testbench 
+# Start time: 22:44:55 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/testbench/SYS/CPU/data \
+sim:/testbench/SYS/CPU/adress \
+sim:/testbench/SYS/CPU/oe \
+sim:/testbench/SYS/CPU/we \
+sim:/testbench/SYS/CPU/rst \
+sim:/testbench/SYS/CPU/clk \
+sim:/testbench/SYS/CPU/akku \
+sim:/testbench/SYS/CPU/adreg \
+sim:/testbench/SYS/CPU/pc \
+sim:/testbench/SYS/CPU/states
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:37:42 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:37:42 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:37:48 on May 08,2021, Elapsed time: 0:52:53
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:37:48 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:39:12 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:39:12 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:39:37 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:39:37 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:39:44 on May 08,2021, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:39:44 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 124
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:48:41 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:48:41 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:48:48 on May 08,2021, Elapsed time: 0:09:04
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:48:48 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+# Can't move the Now cursor.
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:55:16 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:55:16 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:55:20 on May 08,2021, Elapsed time: 0:06:32
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:55:20 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:12 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:56:21 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:56:22 on May 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:56:26 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:56:26 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:56:29 on May 08,2021, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:56:29 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:12 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 32 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:57:23 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:57:23 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:57:53 on May 08,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 23:57:53 on May 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:57:59 on May 08,2021, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 23:57:59 on May 08,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 63
+# 0 124
+# 0 125
+# 0 194
+# 0 196
+# 0 0
+# 0 253
+# 0 1
+# 0 0
+# 0 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+run
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:00:31 on May 09,2021
+# vcom -reportprogress 300 -work work -2002 -explicit C:/dev/labs/minimal8bitcpu/testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu2system
+# -- Compiling architecture main of cpu2system
+# -- Compiling entity testbench
+# -- Compiling architecture testmain of testbench
+# -- Compiling configuration tb_cfg
+# -- Loading entity testbench
+# -- Loading architecture testmain of testbench
+# -- Loading entity cpu2system
+# End time: 00:00:32 on May 09,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 00:00:38 on May 09,2021, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 18
+# vsim work.testbench 
+# Start time: 00:00:38 on May 09,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(testmain)
+# Loading work.cpu2system(main)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cpu8bit2(cpu_arch)
+# Loading ieee.std_logic_signed(body)
+# Loading work.sram64kx8(sram_behaviour)
+add wave -position insertpoint sim:/testbench/SYS/CPU/*
+run
+# ** Note: CPU init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Note: SRAM init
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# reading memory.dat:0 63
+# 1 124
+# 2 125
+# 3 194
+# 4 196
+# 5 0
+# 60 253
+# 61 1
+# 62 0
+# 63 255
+# ** Note: SRAM ready
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Note: CPU reset
+#    Time: 50 ns  Iteration: 0  Instance: /testbench
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/SYS/CPU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/SYS/RAM
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 3  Instance: /testbench/SYS/RAM
+# ** Note: CPU running
+#    Time: 150 ns  Iteration: 0  Instance: /testbench
+# Can't move the Now cursor.
+run
+run
+run
+run
+run
+quit -sim
+# End time: 00:18:56 on May 09,2021, Elapsed time: 0:18:18
+# Errors: 0, Warnings: 20
