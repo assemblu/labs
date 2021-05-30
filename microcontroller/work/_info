@@ -13,14 +13,14 @@ dC:/dev/labs/minimal8bitcpu
 Ccfg_sram
 esram64kx8
 asram_behaviour
-DAx4 work 9 sram64kx8 14 sram_behaviour 22 >h]fc>X<WAJ]PN>Nz5M1M2
+DAx4 work 9 sram64kx8 14 sram_behaviour 22 5NjX0N7RE7D07ja`?dUDH3
 Z0 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z1 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DEx4 work 9 sram64kx8 0 22 VH6:15Yf=1di7ilzhLOI01
-!i122 109
-Z5 w1620744617
+Z4 DEx4 work 9 sram64kx8 0 22 4;YVa<To24>[PbY1aO^f]2
+!i122 267
+Z5 w1622379123
 Z6 dC:/dev/labs/microcontroller
 Z7 8C:/dev/labs/microcontroller/sram64kx8.vhd
 Z8 FC:/dev/labs/microcontroller/sram64kx8.vhd
@@ -30,19 +30,19 @@ VRgVHj?1>^BFJPgeKo]_FA3
 !s100 _ZVAKQoc[S;@M`Pe5SKGd0
 Z9 OV;C;2020.1;71
 32
-Z10 !s110 1620744635
+Z10 !s110 1622379313
 !i10b 0
-Z11 !s108 1620744635.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/dev/labs/microcontroller/sram64kx8.vhd|
+Z11 !s108 1622379312.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/dev/labs/microcontroller/sram64kx8.vhd|
 Z13 !s107 C:/dev/labs/microcontroller/sram64kx8.vhd|
 !i113 1
 Z14 o-work work -2002 -explicit
 Z15 tExplicit 1 CvgOpt 0
 Ecpu2system
-Z16 w1620557936
+Z16 w1622379048
 R3
 R2
-!i122 139
+!i122 279
 R6
 Z17 8C:/dev/labs/microcontroller/testbench.vhd
 Z18 FC:/dev/labs/microcontroller/testbench.vhd
@@ -52,9 +52,9 @@ V>PZz>5`J6fB<f<01=i]U31
 !s100 f2]=]k?A;KoABHn3zUfh;2
 R9
 32
-Z19 !s110 1620756895
+Z19 !s110 1622380374
 !i10b 1
-Z20 !s108 1620756895.000000
+Z20 !s108 1622380374.000000
 Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/dev/labs/microcontroller/testbench.vhd|
 Z22 !s107 C:/dev/labs/microcontroller/testbench.vhd|
 !i113 1
@@ -64,11 +64,11 @@ Amain
 R3
 R2
 Z23 DEx4 work 10 cpu2system 0 22 >PZz>5`J6fB<f<01=i]U31
-!i122 139
+!i122 279
 l39
 L11 37
-V5L638]mHa5elE8hXbm:VJ0
-!s100 J<Pc]4A0^:Vl@feB6>^8W3
+V^Qe3PPJHbV7o<lmEfJGD_2
+!s100 U6G02ShcB>b[zE=QX5kUd0
 R9
 32
 R19
@@ -125,24 +125,24 @@ R32
 R14
 R15
 Emicrocontroller
-Z33 w1620759285
+Z33 w1622380468
 R0
 R24
 R3
 R2
-!i122 144
+!i122 281
 R6
 R27
 R28
 l0
 R29
-VnnWI8:7D<QhmL>d^2NnhE2
-!s100 l[Pf?OQ;_QRflajDKG06Q0
+V9aJDAGa`h2oNF1j;fKdbI0
+!s100 l;zAlB49Ih:lKg[j_M71<3
 R9
 32
-Z34 !s110 1620759315
+Z34 !s110 1622380472
 !i10b 1
-Z35 !s108 1620759315.000000
+Z35 !s108 1622380472.000000
 R31
 R32
 !i113 1
@@ -153,12 +153,12 @@ R0
 R24
 R3
 R2
-Z36 DEx4 work 15 microcontroller 0 22 nnWI8:7D<QhmL>d^2NnhE2
-!i122 144
-l31
-L25 49
-Vb9=U2^2`ZO>Zn?V^D8Q^b0
-!s100 0GN=a[Y]NniEOB?5j<L=[3
+Z36 DEx4 work 15 microcontroller 0 22 9aJDAGa`h2oNF1j;fKdbI0
+!i122 281
+l33
+Z37 L25 57
+VTba5z`98IA2Kf6fHI03SU0
+!s100 m[gQ<^EZ<Uimz8PLXQHdH1
 R9
 32
 R34
@@ -175,14 +175,14 @@ R0
 R1
 R2
 R3
-!i122 109
+!i122 267
 R6
 R7
 R8
 l0
 L25 1
-VVH6:15Yf=1di7ilzhLOI01
-!s100 _9dSB9MR9Z[HBVUBNFmT10
+V4;YVa<To24>[PbY1aO^f]2
+!s100 lI`3HH?OKPJSF3WOkYa@43
 R9
 32
 R10
@@ -199,11 +199,11 @@ R1
 R2
 R3
 R4
-!i122 109
+!i122 267
 l39
 L38 107
-V>h]fc>X<WAJ]PN>Nz5M1M2
-!s100 <;XEJiA3eKd44Vze98m1P0
+V5NjX0N7RE7D07ja`?dUDH3
+!s100 23Ak@AV>hFnbU=KRzN_>g0
 R9
 32
 R10
@@ -221,8 +221,8 @@ R23
 DAx4 work 9 testbench 8 testmain 22 SWO8e942h=H[4TIEh[lLF0
 R3
 R2
-Z37 DEx4 work 9 testbench 0 22 2SJ]89Gh]R:Y4RQDV1YaF1
-!i122 139
+Z38 DEx4 work 9 testbench 0 22 2SJ]89Gh]R:Y4RQDV1YaF1
+!i122 279
 R16
 R6
 R17
@@ -245,7 +245,7 @@ Etestbench
 R16
 R3
 R2
-!i122 139
+!i122 279
 R6
 R17
 R18
@@ -266,8 +266,8 @@ R15
 Atestmain
 R3
 R2
-R37
-!i122 139
+R38
+!i122 279
 l64
 L55 38
 VSWO8e942h=H[4TIEh[lLF0

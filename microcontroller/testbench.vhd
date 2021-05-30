@@ -13,8 +13,8 @@ architecture main of cpu2system is
 component microcontroller
 	port (	--dout:	out	std_logic_vector(7 downto 0);
 		--data:	in	std_logic_vector(7 downto 0);
-		data:	inout	std_logic_vector(7 downto 0);
-		adress:	out	std_logic_vector(5 downto 0);
+		data:	inout	std_logic_vector(15 downto 0);
+		adress:	out	std_logic_vector(11 downto 0);
 		oe:	out	std_logic;
 		we:	out	std_logic;
 		rst:	in	std_logic;
@@ -24,8 +24,8 @@ end component;
 
 component sram64kx8 
   port (ncs1, cs2: in std_logic;        -- not chip select 1, cs2
-        addr     : in std_logic_vector( 15 downto 0 );
-        data     : inout std_logic_vector( 7 downto 0 );
+        addr     : in std_logic_vector( 31 downto 0 );
+        data     : inout std_logic_vector( 15 downto 0 );
         nwe      : in std_logic;        -- not write enable
         noe      : in std_logic        -- not output enable 
        );
@@ -33,9 +33,9 @@ end component;
 
 	signal	ncs,cs:	std_logic;
 	signal	oe,we:	std_logic;
-	signal	data:	std_logic_vector(7 downto 0);
-	signal  adrram: std_logic_vector(15 downto 0);
-	signal  adrcpu:	std_logic_vector(5 downto 0);
+	signal	data:	std_logic_vector(15 downto 0);
+	signal  adrram: std_logic_vector(31 downto 0);
+	signal  adrcpu:	std_logic_vector(11 downto 0);
 begin
 
  CPU:	microcontroller	port map(rst => reset, clk => clk, oe => oe, we => we, data => data, adress => adrcpu); 
@@ -43,7 +43,7 @@ begin
 
 	ncs <= '0';
 	cs  <= '1';
-	adrram <= "0000000000" & adrcpu;
+	adrram <=  "00000000000000000000" & adrcpu;
 end;
 
 library ieee;

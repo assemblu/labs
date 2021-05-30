@@ -27,8 +27,8 @@ entity sram64kx8 is
   generic (rom_data_file_name: string := "memory.dat");
 
   port (ncs1, cs2: in std_logic;        -- not chip select 1, cs2
-        addr     : in std_logic_vector( 15 downto 0 );
-        data     : inout std_logic_vector( 7 downto 0 );
+        addr     : in std_logic_vector( 31 downto 0 );
+        data     : inout std_logic_vector( 15 downto 0 );
         nwe      : in std_logic;        -- not write enable
         noe      : in std_logic        -- not output enable 
        );
@@ -43,7 +43,7 @@ begin
       constant low_address: natural := 0;
       constant high_address: natural := 65535;  -- 64K SRAM
 
-      subtype byte is std_logic_vector( 7 downto 0 );
+      subtype byte is std_logic_vector( 15 downto 0 );
 
       type memory_array is
          array (natural range low_address to high_address) of byte;
@@ -71,7 +71,7 @@ begin
 	write( output, "reading memory.dat:" );
         -- first initialize the RAM array with zeroes
         for add in low_address to high_address loop
-           mem(add) := "00000000";
+           mem(add) := "0000000000000000";
         end loop; 
         -- and now read the data file
         while not endfile(binary_file) loop
@@ -79,7 +79,7 @@ begin
            read (L, add);
 	   read (L, c ); -- delimiting space
 	   val := 0; 
-	   for i in 0 to 7 loop
+	   for i in 0 to 15 loop
 	      val := val + val;
 	      read (L, c );
 	      if c = '1' then 
@@ -92,7 +92,7 @@ begin
            write( L, val);
            writeline( output, L );
            --
-           mem( add ) := conv_std_logic_vector( val, 8 );
+           mem( add ) := conv_std_logic_vector( val, 16 );
         end loop;
 	report "SRAM ready";
       end load;
@@ -101,7 +101,7 @@ begin
       
    begin
       load( mem );
-      data <= "ZZZZZZZZ" ;
+      data <= "ZZZZZZZZZZZZZZZZ" ;
       --
       --
       -- process memory cycles
@@ -117,23 +117,23 @@ begin
             -- 
             if nwe = '0' then
                --- write cycle
-               mem( address ) := data(7 downto 0);
-               data <= "ZZZZZZZZ";
+               mem( address ) := data(15 downto 0);
+               data <= "ZZZZZZZZZZZZZZZZ";
             elsif nwe = '1' then 
                -- read cycle
                if noe = '0' then
                   data <= mem( address );
                else 
-                  data <= "ZZZZZZZZ";
+                  data <= "ZZZZZZZZZZZZZZZZ";
                end if;
             else
-               data <= "ZZZZZZZZ";
+               data <= "ZZZZZZZZZZZZZZZZ";
             end if;
          else
             --
             -- Chip not selected, disable output
             --
-            data <= "ZZZZZZZZ";
+            data <= "ZZZZZZZZZZZZZZZZ";
          end if;
 
          wait on ncs1, cs2, nwe, noe, addr, data; -- FNH, 29.1.99: added data

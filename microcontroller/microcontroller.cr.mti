@@ -1,23 +1,4 @@
-C:/dev/labs/microcontroller/sram64kx8.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/dev/labs/microcontroller/sram64kx8.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_SIGNED
--- Compiling entity sram64kx8
--- Compiling architecture sram_behaviour of sram64kx8
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(63): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
-** Error (suppressible): C:/dev/labs/microcontroller/sram64kx8.vhd(104): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(120): (vcom-1272) Length of expected is 8; length of actual is 14.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(121): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(125): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(127): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(130): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(136): (vcom-1272) Length of expected is 14; length of actual is 8.
-** Note: C:/dev/labs/microcontroller/sram64kx8.vhd(144): VHDL Compiler exiting
-
-} {} {}} C:/dev/labs/microcontroller/testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/dev/labs/microcontroller/testbench.vhd
+C:/dev/labs/microcontroller/testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/dev/labs/microcontroller/testbench.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -30,5 +11,19 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading entity testbench
 -- Loading architecture testmain of testbench
 -- Loading entity cpu2system
+
+} {} {}} C:/dev/labs/microcontroller/sram64kx8.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/dev/labs/microcontroller/sram64kx8.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity sram64kx8
+-- Compiling architecture sram_behaviour of sram64kx8
+** Warning: C:/dev/labs/microcontroller/sram64kx8.vhd(63): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+-- Compiling configuration cfg_sram
+-- Loading entity sram64kx8
+-- Loading architecture sram_behaviour of sram64kx8
 
 } {} {}}
