@@ -43,11 +43,12 @@ begin
 
 		-- PC / Adress path
 		if (opcode = "000000") then 
-			--if (p_opcode /= "100000") then 
+			if (p_opcode /= "000011") then 
 				pc <= adreg + 1;
-			--else
+				p_opcode <= opcode;
+			else
 				adreg <= pc;
-			--end if;
+			end if;
 			adreg	<= "00" & data(9 downto 0);
 		else	
 			adreg <= pc;
@@ -57,7 +58,7 @@ begin
 		case opcode is
 			when "000001" => akku(11 downto 0) <= adreg; -- MOV into akku (kinda like loading)
 			when "000010" => akku <= ("0000" & adreg) + akku; -- ADD adreg + akku and store in akku
-			--when "100" => pc <= (others => '1'); p_opcode <= opcode; -- JMP (to line number of data)
+			when "000011" => pc <= (others => '1'); p_opcode <= opcode; -- JMP (to line number of data)
 			--when "101" => null;
 			--when "110" => null;
 			--when "111" => null;
