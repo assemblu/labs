@@ -30,6 +30,7 @@ architecture CPU_ARCH of microcontroller is
 	signal 	pc:	std_logic_vector(11 downto 0);
 	signal	opcode:	std_logic_vector(5 downto 0); -- 4bit
 	signal p_opcode : std_logic_vector(5 downto 0); -- 4bit
+	signal carry_reg : std_logic;
 begin
 	process(clk,rst)
 	begin
@@ -43,11 +44,12 @@ begin
 
 		-- PC / Adress path
 		if (opcode = "000000") then 
-			if (p_opcode /= "000011") then 
+			if (p_opcode /= "000011" and p_opcode /= "000110") then 
 				pc <= adreg + 1;
 			else
 				adreg <= pc;
 				p_opcode <= "000000";
+				carry_reg <= '0';
 			end if;
 			adreg	<= "00" & data(9 downto 0);
 		else	
@@ -59,9 +61,9 @@ begin
 			when "000001" => akku(11 downto 0) <= adreg; -- MOV into akku (kinda like loading)
 			when "000010" => akku <= ("0000" & adreg) + akku; -- ADD adreg + akku and store in akku
 			when "000011" => pc <= adreg; p_opcode <= opcode; -- JMP (to line number of data)
-			--when "101" => null;
-			--when "110" => null;
-			--when "111" => null;
+			when "000100" => akku <= akku + 1; -- INC akku
+			when "000101" => if (akku <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE
+			when "000110" => if (carry_reg = '1') then pc <= adreg; p_opcode <= opcode; end if;  -- JE
 			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
 		end case;						
 
