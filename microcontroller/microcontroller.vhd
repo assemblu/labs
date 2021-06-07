@@ -25,8 +25,7 @@ end;
 architecture CPU_ARCH of microcontroller is
 	signal	akku:	std_logic_vector(15 downto 0);	-- akku(8) is carry !
 	signal	adreg:	std_logic_vector(11 downto 0);
-	--signal	greg:	std_logic_vector(7 downto 0);
-	--signal pc_track : std_logic_vector(5 downto 0);
+	signal cx: std_logic_vector(15 downto 0);
 	signal 	pc:	std_logic_vector(11 downto 0);
 	signal	opcode:	std_logic_vector(5 downto 0); -- 4bit
 	signal p_opcode : std_logic_vector(5 downto 0); -- 4bit
@@ -64,6 +63,7 @@ begin
 			when "000100" => akku <= akku + 1; -- INC akku
 			when "000101" => if (akku <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE
 			when "000110" => if (carry_reg = '1') then pc <= adreg; p_opcode <= opcode; end if;  -- JE
+			--when "000111" => -- 
 			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
 		end case;						
 
