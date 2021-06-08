@@ -57,12 +57,13 @@ begin
 
 		-- ALU / Data Path
 		case opcode is
-			when "000001" => akku(11 downto 0) <= adreg; -- MOV into akku (kinda like loading)
+			when "000001" => akku(11 downto 0) <= adreg; -- MOV into akku
 			when "000010" => akku <= ("0000" & adreg) + akku; -- ADD adreg + akku and store in akku
 			when "000011" => pc <= adreg; p_opcode <= opcode; -- JMP (to line number of data)
 			when "000100" => akku <= akku + 1; -- INC akku
 			when "000101" => if (akku <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE
 			when "000110" => if (carry_reg = '1') then pc <= adreg; p_opcode <= opcode; end if;  -- JE
+			when "000111" => cx <= akku; -- MOV into cx from akku
 			--when "000111" => -- 
 			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
 		end case;						
