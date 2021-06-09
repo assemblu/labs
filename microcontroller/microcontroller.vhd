@@ -64,7 +64,9 @@ begin
 			when "000101" => if (akku <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE
 			when "000110" => if (carry_reg = '1') then pc <= adreg; p_opcode <= opcode; end if;  -- JE
 			when "000111" => cx <= akku; -- MOV into cx from akku
-			--when "000111" => -- 
+			when "001000" => cx(11 downto 0) <= adreg; -- Directly write to cx
+			when "001001" => if (cx <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE for cx
+			
 			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
 		end case;						
 
