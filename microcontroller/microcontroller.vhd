@@ -66,7 +66,8 @@ begin
 			when "000111" => cx <= akku; -- MOV into cx from akku
 			when "001000" => cx(11 downto 0) <= adreg; -- Directly write to cx
 			when "001001" => if (cx <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE for cx
-			
+			when "001010" => if (cx = "0000" & adreg) then carry_reg <= '1'; end if; -- CMP with cx
+			when "001011" => cx <= cx + 1; -- INC cx
 			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
 		end case;						
 
