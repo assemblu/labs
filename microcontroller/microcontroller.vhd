@@ -1,12 +1,8 @@
 --
--- Minimal 8 Bit CPU
+-- Author: Emirhan Gocturk
+-- Number: 460385
 --
--- rev 15102001
---
--- 01-02/2001 Tim Böscke
--- 10   /2001 slight changes for proper simulation.
---
--- t.boescke@tuhh.de
+-- 16-Bit microcontroller
 --
 
 library ieee;
@@ -23,12 +19,12 @@ entity microcontroller is
 end;
 
 architecture CPU_ARCH of microcontroller is
-	signal	akku:	std_logic_vector(15 downto 0);	-- akku(8) is carry !
+	signal	akku:	std_logic_vector(15 downto 0);
 	signal	adreg:	std_logic_vector(11 downto 0);
 	signal cx: std_logic_vector(15 downto 0);
 	signal 	pc:	std_logic_vector(11 downto 0);
-	signal	opcode:	std_logic_vector(5 downto 0); -- 4bit
-	signal p_opcode : std_logic_vector(5 downto 0); -- 4bit
+	signal	opcode:	std_logic_vector(5 downto 0);
+	signal p_opcode : std_logic_vector(5 downto 0); 
 	signal carry_reg : std_logic;
 begin
 	process(clk,rst)
