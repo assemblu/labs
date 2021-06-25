@@ -41,12 +41,12 @@ begin
 		if (opcode = "000000") then 
 			if (p_opcode /= "000011" and p_opcode /= "000110") then 
 				pc <= adreg + 1;
+				adreg	<= "00" & data(9 downto 0);
 			else
 				adreg <= pc;
 				p_opcode <= "000000";
 				carry_reg <= '0';
 			end if;
-			adreg	<= "00" & data(9 downto 0);
 		else	
 			adreg <= pc;
 		end if;
@@ -64,13 +64,13 @@ begin
 			when "001001" => if (cx <= "0000" & adreg) then carry_reg <= '1'; end if; -- CMPLE for cx
 			when "001010" => if (cx = "0000" & adreg) then carry_reg <= '1'; end if; -- CMP with cx
 			when "001011" => cx <= cx + 1; -- INC cx
-			when others => null;						-- instr. fetch, jcc taken (000), sta (001) 
+			when others => null;				
 		end case;						
 
 		-- State machine
 		if (opcode /= "000000") then opcode <= "000000"; 			-- fetch next opcode
-		--else if (opcode = "100") then adreg <= pc;
-		else  opcode <= not data(15 downto 10); 			-- execute instruction	
+		--else opcode <= not data(15 downto 10); 
+		elsif (p_opcode /= "000011" and p_opcode /= "000110") then opcode <= not data(15 downto 10); 			-- execute instruction	
 		end if;	
 	   end if;
 	end process;
